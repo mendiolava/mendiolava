@@ -1,0 +1,13 @@
+             {
+                 nodeptr_t tempnode = temptargetlist->next;
+                temptargetlist->next = tempnode->next;
+                tempnode->next = nullptr;
+                free(tempnode);
+ 
+                tempnode = tempbulletlist->next;
+                tempbulletlist->next = tempnode->next;
+                tempnode->next = nullptr;
+ 
+                 free(tempnode);
+                grade++;
+                break;

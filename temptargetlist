@@ -1,0 +1,8 @@
+    while(tempbulletlist->next != nullptr)
+     {
+        nodeptr_t temptargetlist = targetlist;
+         while(temptargetlist->next != nullptr)  
+         {
+             
+             if(temptargetlist->next->x == (tempbulletlist->next->x) && temptargetlist->next->y > tempbulletlist->next->y)
+      

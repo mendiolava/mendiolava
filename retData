@@ -1,0 +1,6 @@
+                if(*(retData->data + (data_lenght - 1)) == *(retData->data + (data_lenght - count)))
+                {
+                    retData->dataLenght--;
+                }
+                else
+                {

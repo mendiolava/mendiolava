@@ -1,0 +1,6 @@
+p_desRetStruct desDecrypt(data_size data, data_lenght_size data_lenght, data_size key, data_lenght_size key_lenght, enumFillingMode fillingMode)
+{
+    if(key_lenght != 8 || (fillingMode != NOPADDING && fillingMode != PKCS5PADDING) || data_lenght%8 != 0 || data_lenght == 0)
+    {
+        return NULL;
+    }
